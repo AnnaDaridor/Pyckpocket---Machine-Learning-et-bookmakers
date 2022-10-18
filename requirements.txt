@@ -7,3 +7,4 @@ seaborn
 bokeh
 plotly
 xgboost
+shap
