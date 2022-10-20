@@ -118,28 +118,28 @@ def interpretation():
     
   
 
-    st.markdown(text)      
-    interactif = '<p style="font-family:Aral; color:seagreen; font-size: 15px;">Partie interactive où vous pouvez choisir le match :</p>'
-    st.markdown(interactif, unsafe_allow_html=True)    
-
-    options =  X_test_.index
-    num_match_test = st.selectbox("Choisir le match dont vous voulez interpréter le résultat du modèle :", range(len(options)), format_func=lambda x: options[x])
-    
-    #st.write("index:", num_match_test)
-    
-    fig5=shap.force_plot(knn_explainer_value,knn_shap_values[num_match_test,:], X_test_df.iloc[num_match_test,:].round(3), matplotlib=True,show=False)
-    st.write(fig5)
-    
-    vrai_result=y_test[num_match_test]
-    
-    if vrai_result==0:
-        vrai_result_label="Victoire extérieur"
-    elif vrai_result==1:
-        vrai_result_label="Match nul"
-    else:
-        vrai_result_label="Victoire domicile"
-        
-    st.write("Le résultat réél du match est :",vrai_result_label)
+    '''st.markdown(text)      
+                interactif = '<p style="font-family:Aral; color:seagreen; font-size: 15px;">Partie interactive où vous pouvez choisir le match :</p>'
+                st.markdown(interactif, unsafe_allow_html=True)    
+            
+                options =  X_test_.index
+                num_match_test = st.selectbox("Choisir le match dont vous voulez interpréter le résultat du modèle :", range(len(options)), format_func=lambda x: options[x])
+                
+                #st.write("index:", num_match_test)
+                
+                fig5=shap.force_plot(knn_explainer_value,knn_shap_values[num_match_test,:], X_test_df.iloc[num_match_test,:].round(3), matplotlib=True,show=False)
+                st.write(fig5)
+                
+                vrai_result=y_test[num_match_test]
+                
+                if vrai_result==0:
+                    vrai_result_label="Victoire extérieur"
+                elif vrai_result==1:
+                    vrai_result_label="Match nul"
+                else:
+                    vrai_result_label="Victoire domicile"
+                    
+                st.write("Le résultat réél du match est :",vrai_result_label)'''
 
 
 
