@@ -4,3 +4,6 @@
 /spec
 
 *.ipynb
+*.md
+*.txt
+*.sh
