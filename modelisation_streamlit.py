@@ -35,10 +35,10 @@ def modelisation():
     with col2:
  
         
-        st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif" width="150" height="150">',
-            unsafe_allow_html=True,
-        )    
+        '''st.markdown(
+                                       f'<img src="data:image/gif;base64,{data_url}" alt="cat gif" width="150" height="150">',
+                                       unsafe_allow_html=True,
+                                   ) '''   
 
     st.markdown(text)  
     
