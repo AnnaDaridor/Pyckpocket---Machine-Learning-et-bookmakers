@@ -7,7 +7,6 @@ from modelisation_streamlit import modelisation
 from best_model_streamlit import best_model
 from feature_streamlit import feature
 from gains_streamlit import gains
-from interpretation_streamlit import interpretation
 from conclusion_streamlit import conclusion
 
 st.sidebar.title("Paris sportif")
