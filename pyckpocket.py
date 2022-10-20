@@ -32,8 +32,6 @@ def main():
          best_model()
     elif page == pages[6]:        
         gains()         
-    '''elif page == pages[7]:
-                       interpretation() '''   
     else:
         conclusion()
 
