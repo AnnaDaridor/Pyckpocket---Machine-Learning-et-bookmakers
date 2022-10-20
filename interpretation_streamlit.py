@@ -118,7 +118,7 @@ def interpretation():
     
   
 
-    '''st.markdown(text)      
+    st.markdown(text)      
                 interactif = '<p style="font-family:Aral; color:seagreen; font-size: 15px;">Partie interactive où vous pouvez choisir le match :</p>'
                 st.markdown(interactif, unsafe_allow_html=True)    
             
@@ -139,7 +139,7 @@ def interpretation():
                 else:
                     vrai_result_label="Victoire domicile"
                     
-                st.write("Le résultat réél du match est :",vrai_result_label)'''
+                st.write("Le résultat réél du match est :",vrai_result_label)
 
 
 
