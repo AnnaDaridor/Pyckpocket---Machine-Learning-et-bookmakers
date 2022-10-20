@@ -140,6 +140,3 @@ def interpretation():
                     vrai_result_label="Victoire domicile"
                     
                 st.write("Le résultat réél du match est :",vrai_result_label)
-
-
-
