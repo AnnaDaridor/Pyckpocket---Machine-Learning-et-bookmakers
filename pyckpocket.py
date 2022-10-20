@@ -15,7 +15,7 @@ st.sidebar.title("Paris sportif")
 def main():
     
     pages = ["Contexte","Données","Dataviz","Feature Engineering","Recherche du meilleur modèle","Meilleur modèle",
-             "Gains selon méthodes de pari", "Interprétation des modèles","Conclusion"]
+             "Gains selon méthodes de pari", "Conclusion"]
     page = st.sidebar.radio("Aller vers", pages)
 
     if page == pages[0]:
@@ -32,8 +32,8 @@ def main():
          best_model()
     elif page == pages[6]:        
         gains()         
-    elif page == pages[7]:
-        interpretation()    
+    '''elif page == pages[7]:
+                       interpretation() '''   
     else:
         conclusion()
 
