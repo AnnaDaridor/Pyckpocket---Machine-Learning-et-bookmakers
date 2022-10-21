@@ -28,17 +28,10 @@ def modelisation():
     ---
     '''
 
-    col1, mid, col2 = st.columns([1,1,3])
-    with col1:
-        original_title = '<p style="font-family:Aral; color:steelblue; font-size: 30px;">Modélisation</p>'
-        st.markdown(original_title, unsafe_allow_html=True)
-    with col2:
- 
-        
-        '''st.markdown(
-                                       f'<img src="data:image/gif;base64,{data_url}" alt="cat gif" width="150" height="150">',
-                                       unsafe_allow_html=True,
-                                   ) '''   
+   
+    original_title = '<p style="font-family:Aral; color:steelblue; font-size: 30px;">Modélisation</p>'
+    st.markdown(original_title, unsafe_allow_html=True)
+       
 
     st.markdown(text)  
     
