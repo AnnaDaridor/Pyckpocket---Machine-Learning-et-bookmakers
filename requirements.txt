@@ -8,4 +8,4 @@ bokeh
 plotly
 xgboost
 openpyxl
-libgl1
+
