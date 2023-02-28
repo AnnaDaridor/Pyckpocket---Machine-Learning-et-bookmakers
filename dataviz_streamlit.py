@@ -5,8 +5,8 @@ from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.plotting import figure
-from bokeh.models.widgets import Panel, Tabs
-from bokeh.models import ColumnDataSource
+#from bokeh.models.widgets import Panel, Tabs
+from bokeh.models import ColumnDataSource, TabPanel
 from bokeh.models.tools import HoverTool
 import plotly.express as px
 
@@ -96,9 +96,9 @@ def dataviz():
       dictionnaire['p'+saison].legend.location = "center_right"
       dictionnaire['p'+saison].legend.background_fill_alpha = 0.8
       dictionnaire['p'+saison].title.text = 'Pourcentage de V/D/N par équipe et saison'
-      dictionnaire['tab'+saison] = Panel(child=dictionnaire['p'+saison], title="Saison"+ saison)
+      dictionnaire['tab'+saison] = TabPanel(child=dictionnaire['p'+saison], title="Saison"+ saison)
     
-    tabs = Tabs(tabs=[ dictionnaire['tab2015'],dictionnaire['tab2016'],dictionnaire['tab2017'],dictionnaire['tab2018'],dictionnaire['tab2019'],dictionnaire['tab2020'],dictionnaire['tab2021']])
+    tabs = TabPanel(tabs=[ dictionnaire['tab2015'],dictionnaire['tab2016'],dictionnaire['tab2017'],dictionnaire['tab2018'],dictionnaire['tab2019'],dictionnaire['tab2020'],dictionnaire['tab2021']])
     
     st.bokeh_chart(tabs, use_container_width=False)
     
