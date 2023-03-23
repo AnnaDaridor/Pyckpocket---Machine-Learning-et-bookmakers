@@ -7,4 +7,4 @@ Les jeux de données dont nous disposions au départ se trouvent sur le site : f
 
 Nous avons choisi de nous intéresser uniquement à la Ligue 1 à partir de la saison 2015.
 
-# Application Streamlit : https://pyckpocket.herokuapp.com/
+# [Application Streamlit](https://annadaridor-pyckpocket---machine-learning-et--pyckpocket-6i2lzl.streamlit.app/)
