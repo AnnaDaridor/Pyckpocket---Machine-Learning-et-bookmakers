@@ -1,7 +1,0 @@
-*.psd
-*.pdf
-/test
-/spec
-
-*.ipynb
-*.md
